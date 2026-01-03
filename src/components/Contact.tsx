@@ -69,7 +69,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -151,7 +151,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-saasha-brown dark:text-dark-text mb-1">Email Us</h3>
-                    <a 
+                    <a
                       href="mailto:help.foundation.saasha@gmail.com"
                       className="text-saasha-brown/80 dark:text-dark-text/80 hover:text-saasha-rose dark:hover:text-dark-accent transition-colors duration-300"
                     >
@@ -170,9 +170,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-saasha-brown dark:text-dark-text mb-1">WhatsApp Community</h3>
-                    <a 
-                      href="https://chat.whatsapp.com/HbsBIjkN1De9fAkm0M7LKO" 
-                      target="_blank" 
+                    <a
+                      href="https://chat.whatsapp.com/CWCZXnrFhYX0374MKsopA7?mode=hqrt2"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-saasha-brown/80 dark:text-dark-text/80 hover:text-saasha-rose dark:hover:text-dark-accent transition-colors duration-300"
                     >
@@ -191,9 +191,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-saasha-brown dark:text-dark-text mb-1">Follow Us</h3>
-                    <a 
-                      href="https://www.instagram.com/saasha_foundation" 
-                      target="_blank" 
+                    <a
+                      href="https://www.instagram.com/saasha_foundation"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-saasha-brown/80 dark:text-dark-text/80 hover:text-saasha-rose dark:hover:text-dark-accent transition-colors duration-300"
                     >
@@ -221,9 +221,8 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.name ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
-                    } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
+                      } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
                     placeholder="John Doe"
                   />
                   {errors.name && (
@@ -241,9 +240,8 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.email ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
-                    } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
+                      } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
                     placeholder="john@example.com"
                   />
                   {errors.email && (
@@ -261,9 +259,8 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.subject ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
-                    } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.subject ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
+                      } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
                     placeholder="How can we help?"
                   />
                   {errors.subject && (
@@ -281,9 +278,8 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.message ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
-                    } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.message ? 'border-red-500' : 'border-saasha-cream dark:border-dark-border'
+                      } focus:outline-none focus:ring-2 focus:ring-saasha-rose/20 dark:bg-dark-secondary dark:text-dark-text`}
                     placeholder="Your message here..."
                   />
                   {errors.message && (
